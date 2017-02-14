@@ -1,0 +1,36 @@
+{
+	"compilerOptions": {
+		"outDir": "./build/",
+		"sourceMap": true,
+		"inlineSourceMap": false,
+		"inlineSources": false,
+    "noEmitOnError": true,
+		"noImplicitAny": true,
+		"strictNullChecks": true,
+		"noImplicitReturns": true,
+		"noUnusedLocals": true,
+		"module": "commonjs",
+		"target": "es5",
+		"jsx": "react",
+		"pretty": true,
+    "lib": [
+      "dom",
+      "es5",
+      "scripthost",
+      "es2015.promise",
+			"es2017.object"
+    ]
+	},
+	"include": [
+		"*.ts",
+		"*.tsx",
+		"./components/**/*.ts",
+    "./components/**/*.tsx"
+	],
+  "exclude": [
+    "node_modules",
+    "**/*.test.tsx",
+    "**/*.test.ts",
+    "**/__mocks__/*.ts"
+  ]
+}

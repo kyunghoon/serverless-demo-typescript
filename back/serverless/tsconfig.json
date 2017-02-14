@@ -1,0 +1,35 @@
+{
+	"compilerOptions": {
+		"outDir": "./.tscout/",
+    "rootDir": ".",
+		"inlineSourceMap": true,
+		"inlineSources": true,
+    "noEmitOnError": true,
+		"noImplicitAny": true,
+		"strictNullChecks": true,
+    "alwaysStrict": true,
+		"noImplicitReturns": true,
+		"noUnusedLocals": true,
+		"module": "commonjs",
+		"target": "es5",
+		"pretty": true,
+    "lib": [
+      "dom",
+      "es7",
+      "scripthost",
+      "es2015.promise"
+    ],
+    "watch": true
+	},
+	"include": [
+		"*.ts",
+		"./src/**/*.ts",
+    "./envs/**/*.ts"
+	],
+  "exclude": [
+    "node_modules",
+    "**/*.test.tsx",
+    "**/*.test.ts",
+    "**/__mocks__/*.ts"
+  ]
+}
